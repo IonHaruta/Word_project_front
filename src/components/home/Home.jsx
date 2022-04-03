@@ -1,6 +1,7 @@
 import { Component } from "react";
 import {Redirect} from "react-router-dom";
 import DefinitionItem from "../definition/DefinitionItem";
+import Navbar from "../navbar/Navbar";
 
 import Swal from 'sweetalert2'
 
@@ -69,6 +70,8 @@ export default class Home extends Component {
     
   }
 
+ 
+
   render() {
     const token = this.state.token || localStorage.getItem("token");
     if (token == null || token === "") {
@@ -76,6 +79,7 @@ export default class Home extends Component {
     }
 
     return (
+      <Navbar>
       <div className="wrapper fadeInDown">
         <div id="formContent">
             <input type="text" id="myWord" placeholder="Your word" onChange={(event)=>{
@@ -97,7 +101,9 @@ export default class Home extends Component {
           })
           }
         </div>
+
     </div>
+    </Navbar>
     );
   }
 }

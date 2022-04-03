@@ -1,0 +1,33 @@
+.topnav {
+    background-color: rgb(49, 155, 226);
+    overflow: hidden;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  /* Add a color to the active/current link */
+  .topnav a.active {
+    background-color: #4b8dad;
+    color: white;
+  }
+  .logout_btn{
+     margin:auto !important;
+     padding: 15px 35px !important;
+     margin-top: 5px !important;
+     float:right;
+     margin-right: 20px !important;
+  }
